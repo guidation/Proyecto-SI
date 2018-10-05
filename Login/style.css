@@ -1,0 +1,74 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(login.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    
+}
+.login_box{
+    width: 300px;
+    height: 350px;
+    background: white;
+    text-align: center;
+    font-display: sans-serif;
+    color: black;
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transform: translate(-50%,-50%)
+
+    
+}
+.info{
+    left: 5%;
+    position: absolute;
+}
+.info h1{
+    top: 40px;
+    color: white;
+    font-size: 70px;
+}
+.info p{
+    width: 250px;
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-align: justify;
+    
+}
+.info img{
+    border-radius: 10px;
+    width: 250px;
+}
+.login_box p{
+    font-weight: bold;
+    font-size: 16px;
+    height: 20px;
+    bottom: 40px;
+}
+.login_box input{
+    width: 90%;
+    margin-bottom: 20px;
+}
+.login_box input[type="text"],input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 18px;
+
+}
+.login_box input[type = "submit"]{
+    border: thin;
+    outline: none;
+    background: blue;
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    border-radius: 10px;
+}
