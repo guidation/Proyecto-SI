@@ -1,0 +1,82 @@
+
+
+.barra_superior {
+    background-color:white;
+    overflow: hidden;
+    border: black;
+    border-style: ridge;
+    height: 48px;
+    border-radius: 5px;
+}
+.barra_superior img{
+    margin-left: 50px;
+    float: left;
+    height: 45px;
+    width: 45px;
+}
+
+.barra_superior a {
+    margin-left: 50px;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.barra_superior a:hover {
+    background-color: darkorchid;
+    color:white;
+}
+.barra_superior a.active {
+    background-color: darkred;
+    color: white;
+}
+.barra_superior perfil{
+    right: 0;
+}
+
+* {box-sizing:border-box}
+
+.SlideShow {
+  top: 50px;
+  max-width: 90%;
+  max-height: 60%;
+  position: relative;
+  margin: auto;
+  
+}
+
+.diapositivas {
+    display: none;
+    border-radius: 10px;
+}
+
+.text {
+  color: white;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+  

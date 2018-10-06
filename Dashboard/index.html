@@ -1,0 +1,64 @@
+<!DOCTYPe html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" type "text/css" href="style.css">
+    </head>
+    <body>
+        <div class="barra_superior">
+            <img src="logo.png"></a>
+            <a class="home" href="#index.html>">Home</a>
+            <a class= "perfil" href="#Perfil">Perfil</a>
+        </div>
+        
+<div class="SlideShow">
+
+    <div class="diapositivas fade">
+    <img src="slide1.jpg" style="width:100%">
+    <div class="text">Chequea nuestro menu y agrega lo que quieras a tu carrito.</div>
+  </div>
+
+  <div class="diapositivas fade">
+    <img src="slide2.jpg" style="width:100%">
+    <div class="text">Dirigite a la seccion de compras y paga a traves de los medios disponibles en nuestra plataforma.</div>
+  </div>
+
+  <div class="diapositivas fade">
+    <img src="slide3.jpg" style="width:100%">
+    <div class="text">Sientate, relajate y disfruta mientras nosotros nos encargamos de llevar tu pedido a tu hogar.</div>
+  </div>
+
+</div>
+<br>
+
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("diapositivas");
+    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 6000); // Cambia la imagen cada 10 s
+  
+  }
+</script>
+
+
+    </body>
+</html>
