@@ -1,51 +1,8 @@
-
-
-.barra_superior {
-    background-color:white;
-    overflow: hidden;
-    border-bottom: solid 2px black;
-    height: 48px;
-    border-radius: 5px;
-    align-self: center;
-    width: 95%;
-    margin: auto;
-    font-weight: bolder;
-}
-.barra_superior img{
-    margin-left: 10px;
-    margin-right: 10px;
-    float: left;
-    height: 45px;
-    width: 45px;
-}
-
-.barra_superior a {
-    margin :auto;
-    color: black;
-    text-align: center;
-    padding: 30px;
-    font-size: 17px;
-}
-.barra_superior b {
-   left: 400px;
-   position: absolute;
-    
-}
-.barra_superior a:hover {
-    background-color: darkorchid;
-    color:white;
-}
-.barra_superior a.active {
-    background-color: darkred;
-    color: white;
-}
-
 .multimedia  {
    margin-top: 20px;
-    border-radius: 20;
+    border-radius: 20px;
     margin: auto;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 
 .heading {
@@ -57,7 +14,6 @@
     height: 80px;
     width: 95%;
     color: white;
-    
 }
 .title {
     
@@ -65,8 +21,6 @@
     font-size: 40px;
     font-family: sans-serif;
     font-style: bold;
-    
-    
 }
 .fila {
 
@@ -80,15 +34,21 @@
     width: 30%;
     padding: 10px;
     border-radius: 20px; 
+    box-sizing: border-box;
   }
-  
+  .columnaStart {
+    flex: 30%;
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px; 
+  }
   .columnaInstruc{
     flex: 30%;
     padding: 20px;
     border-radius: 20px; 
     font-size: 2em;
     box-sizing: border-box;
-    background: silver;
+    background: rgb(192, 192, 192);
     color: white;
     width: 150px;
     height: 400px;
@@ -97,15 +57,18 @@
   .text {
      text-align: center;
   }
-
+  .columnaStart img {
+    margin-top: 60px;
+    border-radius: 20px; 
+  }
   .columna img {
     margin-top: 20px;
     border-radius: 20px; 
   }
   .columna img:hover{
     opacity: 0.55;
-    
   }
+
   @media screen and (max-width: 800px) {
     .columna {
       flex: 50%;
