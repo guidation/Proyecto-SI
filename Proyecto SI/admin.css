@@ -93,6 +93,8 @@
         flex: 100%;
         max-width: 100%;
       }
+     .form-inline{
+        visibility: hidden;}
     
   }
 
