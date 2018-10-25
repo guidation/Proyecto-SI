@@ -1,0 +1,126 @@
+<nav class="navbar navbar-default" >
+    <div class="container-fluid">
+  
+      <div class="navbar-header">
+        <a class="navbar-brand" routerLink='/clave'>UMakeIt</a>
+       
+        
+            </div>
+             
+      </div>
+    
+      </nav>
+      <head>
+    <title>Login Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+</head>
+
+ <div class="card-deck">
+    <div class="card bg-primary1">
+      <div class="card-body text-center">
+        <div class="card-text">
+            <p>Compras en seguimiento</p>
+            <table class="table">
+                <thead>
+                  <tr class="superior">
+                 
+                    <th>ID</th>
+                    <th>USUARIO</th>
+                    <th>COMIDA</th>
+                    <th>CANTIDAD</th>
+                    <th>ESTADO</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let list of productos3" class="interior">
+                      
+                      
+                      <td>{{list.producto_id1}}</td>
+                      <td>{{list.producto_quality2}}</td>
+                      <td>{{list.producto_name12}}</td>
+                      <td>
+                        {{list.producto_quality1}}
+              
+                      </td>
+                      <td>
+                        {{list.producto_price1}}
+                      </td>
+                    </tr>
+                </tbody>
+                
+              </table>
+              
+          
+        
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <style>
+    .card-deck{
+      padding: 10px;
+    }
+    .interior{
+      background-color: white;
+      color: black;
+     
+    }
+    .btn-nav{
+           background-color:darkred;
+           border-color: white;
+            color: white;
+            font-size: 15px;
+            height: 40px;
+            justify-content: center;
+            
+        }
+        
+        .footer1{
+         text-align: center;
+         margin:0;
+          color: black;
+          height: 10%;
+          padding: 1px;
+        }
+        .navbar{
+        background-color:darkred;
+        height: 60px;
+        position: sticky;
+        top: 0;
+        font-family: 'Anton';
+      }
+      .navbar-brand{
+        color: white;
+        font-size: 30px;
+        font-family: 'Anton';
+        padding: 10px;
+        
+      }
+    .superior{
+      background-color: darkred;
+      color: white;
+     
+    }
+    .table{
+      border: white;
+      flex: 50%
+    }
+    .inferior{
+      background-color: lightslategrey;
+      
+    }
+    .bg-primary1{
+      background-color: khaki;
+    }
+  </style>
+
+
+<div class="container" style="min-height:30px ; min-width:400px">
+
+</div>
+<footer class="footer1">
+    <p>&copy; All rights reserved for <i>Serresiete Inc.</i> 2018</p>
+</footer>

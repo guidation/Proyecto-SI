@@ -1,0 +1,95 @@
+<app-navbar>
+</app-navbar>
+<nav class="navbar navbar-default" >
+    <div class="container-fluid">
+  
+      <div class="navbar-header">
+          <a class="navbar-brand" routerLink='/compras'>Previous Purchases</a>
+        
+            </div>
+             
+      </div>
+    
+      </nav>
+<div class="admin header">
+  <img class="admin-symbol" src="/assets/menu_symbol_editor.png" alt="editor" style="margin:auto;">
+</div>
+
+
+<div class="row">
+    <div class="col-xl-4" *ngFor="let plato of platos">
+      <div class="card">
+          <img class="card-img-top" src="{{plato.img}}">
+          <div class="card-block">
+              <p class="card-text">{{plato.name}}</p>
+              <ul class="list-group list-group-flush">
+                        <h3>Active</h3>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <button type="button" class="btn btn-secondary btn-md">Details</button>
+              </ul>
+          </div>
+      </div>
+
+    </div>
+    
+      <img class="foto" src="/assets/add.png" alt="add">
+    
+  </div>
+  <style>
+    
+      .card-deck{
+        padding: 10px;
+      }
+      .interior{
+        background-color: white;
+        color: black;
+       
+      }
+      .btn-nav{
+             background-color:darkred;
+             border-color: white;
+              color: white;
+              font-size: 15px;
+              height: 40px;
+              justify-content: center;
+              
+          }
+          
+          .footer1{
+           text-align: center;
+           margin:0;
+            color: black;
+            height: 10%;
+            padding: 1px;
+          }
+          .navbar{
+          background-color:darkred;
+          height: 60px;
+          position: sticky;
+          top: 0;
+          font-family: 'Anton';
+        }
+        .navbar-brand{
+          color: white;
+          font-size: 30px;
+          font-family: 'Anton';
+          padding: 10px;
+          
+        }
+      .superior{
+        background-color: darkred;
+        color: white;
+       
+      }
+      .table{
+        border: white;
+        flex: 50%
+      }
+      .inferior{
+        background-color: lightslategrey;
+        
+      }
+      .bg-primary1{
+        background-color: khaki;
+      }
+    </style>
